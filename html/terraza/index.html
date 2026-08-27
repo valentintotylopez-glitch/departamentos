@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terrraza | Sol</title>
+    <style>
+      :root {
+        --bg: #f7f3ee;
+        --panel: #fffaf3;
+        --primary: #d77d4b;
+        --primary-dark: #a95d2a;
+        --text: #1e2a2d;
+        --muted: #5e6c71;
+        --border: rgba(30, 42, 45, 0.08);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(180deg, #f8f3ec 0%, #f2e7d9 100%);
+        color: var(--text);
+      }
+      .wrap { max-width: 1100px; margin: 0 auto; padding: 32px 20px 80px; }
+      .header {
+        display: flex; justify-content: space-between; align-items: center; gap: 16px;
+        margin-bottom: 28px;
+      }
+      .brand { font-size: 1.8rem; font-weight: 700; }
+      .brand span { color: var(--primary); }
+      .btn {
+        display: inline-block; padding: 12px 18px; border-radius: 999px; background: var(--primary);
+        color: white; text-decoration: none; font-weight: 700;
+      }
+      .hero {
+        display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 28px; align-items: center;
+      }
+      .hero img, .gallery img {
+        width: 100%; display: block; border-radius: 20px; object-fit: cover;
+      }
+      .hero img { height: 420px; }
+      .content {
+        background: rgba(255,255,255,0.4); border: 1px solid var(--border); border-radius: 26px;
+        padding: 28px;
+      }
+      .eyebrow {
+        text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.76rem; color: var(--primary-dark);
+        font-weight: 700; margin: 0 0 8px;
+      }
+      h1 { margin: 0 0 14px; font-size: clamp(2rem, 4vw, 3.2rem); }
+      p { color: var(--muted); line-height: 1.8; margin: 0 0 16px; }
+      ul { margin: 0; padding-left: 18px; color: var(--text); line-height: 1.8; }
+      .gallery {
+        display: grid; grid-template-columns: repeat(3, minmax(180px, 1fr)); gap: 18px; margin-top: 34px;
+      }
+      .gallery img { height: 220px; }
+      @media (max-width: 760px) {
+        .hero { grid-template-columns: 1fr; }
+        .gallery { grid-template-columns: 1fr 1fr; }
+      }
+      @media (max-width: 520px) {
+        .header { flex-direction: column; align-items: flex-start; }
+        .gallery { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <div class="brand">Sol <span>Terrraza</span></div>
+        <a class="btn" href="../index.html">Volver</a>
+      </div>
+
+      <section class="hero">
+        <img src="../../imagenes/terraza/vista por fuera de la casa.jpeg" alt="Vista al mar" />
+        <div class="content">
+          <h1>Terrraza al Mar</h1>
+          <p>
+            Una casa frente al mar pensada para desconectar y disfrutar en familia de la playa y sus vistas
+          </p>
+          <ul>
+            <li>Espacio amplio con iluminación natural</li>
+            <li>Patio trasero con parrilla y dejar el auto</li>
+            <li>Zona tranquila y relajada</li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="gallery">
+        <img src="../../imagenes/terraza/comedor.jpeg" alt="Comedor" />
+        <img src="../../imagenes/terraza/entrada a la casa.jpeg" alt="Entrada a la casa" />
+        <img src="../../imagenes/terraza/pieza matrimonial.jpeg" alt="Habitación matrimonial" />
+        <img src="../../imagenes/terraza/cocina.jpeg" alt="Cocina" />
+        <img src="../../imagenes/terraza/vista por fuera de la casa.jpeg" alt="Vista exterior" />
+        <img src="../../imagenes/terraza/entrada a la casa.jpeg" alt="Vista de la entrada" />
+      </div>
+    </div>
+  </body>
+</html>
